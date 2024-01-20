@@ -1,6 +1,3 @@
-// cypress/integration/employee_spec.js
-
-// Replace "yourBearerToken" with the actual bearer token
 const bearerToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWFiNzgyZWVmMzEwM2E3ZDMxNjM1YzQiLCJpYXQiOjE3MDU3MzYyMzksImV4cCI6MTcwNTgyMjYzOX0.a3GYO9YVAL3csLGY-lPDLxRB6ikw4pVUuQeGHtl0OJ0";
 
@@ -42,7 +39,7 @@ describe("Employee API Tests", () => {
 
   // Fetching a specific employee by ID
   it("Should get a specific employee by ID", () => {
-    // Assuming you have an employee ID, replace 'employeeIdValue' with an actual ID
+    // replace 'employeeIdValue' with an actual ID
     const employeeIdValue = "employeeIdValue";
     cy.request({
       method: "GET",
@@ -57,7 +54,7 @@ describe("Employee API Tests", () => {
 
   // Updating an employee
   it("Should update an existing employee", () => {
-    // Assuming you have an employee ID and updated data, replace 'employeeIdValue' and 'updatedData' accordingly
+    //replace 'employeeIdValue' and 'updatedData' accordingly
     const employeeIdValue = "employeeIdValue";
     const updatedData = {
       name: "Updated Name",
@@ -78,7 +75,7 @@ describe("Employee API Tests", () => {
 
   // Deleting an employee
   it("Should delete an existing employee", () => {
-    // Assuming you have an employee ID, replace 'employeeIdValue' with an actual ID
+    // replace 'employeeIdValue' with an actual ID
     const employeeIdValue = "employeeIdValue";
     cy.request({
       method: "DELETE",

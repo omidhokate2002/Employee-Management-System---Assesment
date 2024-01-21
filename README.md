@@ -79,3 +79,37 @@ To run tests, run the following command
 > Accessing Protected Routes:
 
 - Include the obtained token in the Authorization header as a Bearer token for requests to routes under /employees.
+## Code Structure 
+
+- **Authentication:**
+  - User registration and login functionality using JWT for token-based authentication.
+  - Middleware function `verifyToken` ensures secure access to authenticated routes.
+
+- **User and Employee Management:**
+  - MongoDB and Mongoose models (`user.js` and `employee.js`) handle user and employee data.
+  - CRUD operations for employees in `employeeController.js`.
+
+- **Routes:**
+  - Authentication routes in `authRoutes.js`.
+  - Employee management routes in `employeeRoutes.js`.
+
+- **Security:**
+  - User passwords are securely hashed using bcrypt.
+  - JWT tokens are signed and verified with a secret key.
+
+- **Error Handling:**
+  - Comprehensive error handling with proper HTTP status codes and messages.
+  - Middleware handles token verification errors, controllers handle specific errors.
+
+- **Data Validation:**
+  - Basic input validation checks for required fields and unique constraints.
+
+- **Pagination and Filtering:**
+  - Employee retrieval supports pagination, sorting, and filtering by department.
+
+- **Middleware Usage:**
+  - CORS middleware for cross-origin resource sharing.
+  - Express middleware parses JSON and verifies JWT tokens.
+
+- **Environment Variables:**
+  - Sensitive information stored in environment variables for security.

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": ""
+    "test": "npx cypress open"
   },
   "keywords": [],
   "author": "",
